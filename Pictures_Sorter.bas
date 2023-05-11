@@ -5,7 +5,7 @@ Sub Resize_SitePhotos()
 '
     Dim pic As InlineShape
    
-    For Each pic In ActiveDocument.Section(4).InlineShapes
+    For Each pic In ActiveDocument.Section(4).Range.InlineShapes
        
         With pic
             .LockAspectRatio = msoTrue
@@ -26,7 +26,7 @@ Sub Resize_SitePhotos()
 
     Dim pShape As Word.InlineShape
 
-    For Each pShape In ActiveDocument.Section(4).InlineShapes
+    For Each pShape In ActiveDocument.Section(4).Range.InlineShapes
         With pShape.Range
             .InsertAfter vbTab
         End With
