@@ -32,4 +32,4 @@ Sub Resize_SitePhotos()
         End With
 
     Next
-End Sub00
+End Sub
